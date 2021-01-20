@@ -77,15 +77,15 @@ main section div#buscador div#lupa {
 
 /* primer slider */
 
-main section .circuloSlider .fa-circle {
+main section#primerSlider .circuloSlider .fa-circle {
     font-size: 13px;
     cursor: pointer;
 }
 
 /* slider marcas */
 
-main section .flechas .icon-angle-left-solid,
-main section .flechas .icon-angle-right-solid {
+main section#sliderMarcas .flechas .icon-angle-left-solid,
+main section#sliderMarcas .flechas .icon-angle-right-solid {
     font-size: 25px;
     color: white;
     cursor: pointer;
@@ -96,9 +96,16 @@ main section .flechas .icon-angle-right-solid {
     -o-text-stroke: 1px #444444;
 }
 
-main section img {
-    /* border: 1px solid red; */
+main section#sliderMarcas button {
+    font-size: 14px;
+    color: #444444;
+    background-color: #6DE5D1;
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
 }
+
 
 /* media queries */
 
@@ -116,9 +123,20 @@ main section img {
 
     /* primer slider */
 
-    main section .circuloSlider .fa-circle {
+    main section#primerSlider .circuloSlider .fa-circle {
         font-size: 15px;
         cursor: pointer;
+    }
+
+    /* slider marcas */
+
+    main section#sliderMarcas .flechas .icon-angle-left-solid,
+    main section#sliderMarcas .flechas .icon-angle-right-solid {
+        font-size: 28px;
+    }
+
+    main section#sliderMarcas button {
+        font-size: 15px;
     }
 }
 
