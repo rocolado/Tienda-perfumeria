@@ -1,9 +1,16 @@
 @font-face {
     font-family: "RobotoCondensed-Regular";
     src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
 
+@font-face {
     font-family: "msyi";
     src: url("../fonts/msyi.ttf");
+}
+
+@font-face {
+    font-family: "arialbd";
+    src: url("../fonts/arialbd.ttf");
 }
 
 body {
@@ -104,6 +111,27 @@ main section#sliderMarcas button {
     border: 0;
     outline: none;
     cursor: pointer;
+}
+
+/* categorías */
+
+main section#categorias .tituloCategoria {
+    font-family: "arialbd";
+    font-size: 30px;
+    color: white;
+
+    -webkit-text-stroke: 1px #444444;
+    -moz-text-stroke: 1px #444444;
+    -ms-text-stroke: 1px #444444;
+    -o-text-stroke: 1px #444444;
+}
+
+main section#categorias .imgCategoriaDer {
+    box-shadow: 25px 25px #6DE5D1;
+}
+
+main section#categorias .imgCategoriaIzq {
+    box-shadow: -25px 25px #6DE5D1;
 }
 
 
