@@ -192,4 +192,14 @@ main section#categorias .imgCategoriaIzq {
         text-decoration:none;
         cursor: pointer;
     }
+
+    /* categorías */
+
+    main section#categorias .imgCategoriaDer {
+        box-shadow: 20px 20px #6DE5D1;
+    }
+    
+    main section#categorias .imgCategoriaIzq {
+        box-shadow: -20px 20px #6DE5D1;
+    }
 }
