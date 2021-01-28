@@ -126,14 +126,6 @@ main section#categorias .tituloCategoria {
     -o-text-stroke: 1px #444444;
 }
 
-main section#categorias .imgCategoriaDer {
-    box-shadow: 25px 25px #6DE5D1;
-}
-
-main section#categorias .imgCategoriaIzq {
-    box-shadow: -25px 25px #6DE5D1;
-}
-
 
 /* media queries */
 
@@ -191,15 +183,5 @@ main section#categorias .imgCategoriaIzq {
         color: #444444;
         text-decoration:none;
         cursor: pointer;
-    }
-
-    /* categorías */
-
-    main section#categorias .imgCategoriaDer {
-        box-shadow: 20px 20px #6DE5D1;
-    }
-    
-    main section#categorias .imgCategoriaIzq {
-        box-shadow: -20px 20px #6DE5D1;
     }
 }
