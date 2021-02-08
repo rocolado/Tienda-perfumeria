@@ -4,6 +4,16 @@
 }
 
 @font-face {
+    font-family: "RobotoCondensed-Bold";
+    src: url("../fonts/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Light";
+    src: url("../fonts/RobotoCondensed-Light.ttf");
+}
+
+@font-face {
     font-family: "msyi";
     src: url("../fonts/msyi.ttf");
 }
@@ -25,18 +35,18 @@ header {
     background-color: #6DE5D1;
 }
 
-header nav div#menu-deploy{
+header .anchoSecciones nav div#menu-deploy{
     display: none;
 }
 
-header h1 {
+header .anchoSecciones h1 {
     font-family: "msyi";
     font-size: 38px;
     letter-spacing: 4px;
     text-align: center;
 }
 
-header div#menu .icon-bars-solid {
+header .anchoSecciones div#menu .icon-bars-solid {
     font-size: 23px;
     text-align: right;
     color: #6DE5D1;
@@ -48,8 +58,8 @@ header div#menu .icon-bars-solid {
     -o-text-stroke: 1px #444444;
 }
 
-header div#user-shopbag .icon-user-alt-solid,
-header div#user-shopbag .icon-shopping-bag-solid {
+header .anchoSecciones div#user-shopbag .icon-user-alt-solid,
+header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid {
     font-size: 20px;
     text-align: right;
     color: #6DE5D1;
@@ -113,17 +123,77 @@ main section#sliderMarcas button {
     cursor: pointer;
 }
 
-/* categorías */
+/* top ventas */
 
-main section#categorias .tituloCategoria {
+main section#topVentas h2 {
     font-family: "arialbd";
-    font-size: 30px;
-    color: white;
+    font-size: 16px;
+    text-align: center;
+}
 
-    -webkit-text-stroke: 1px #444444;
-    -moz-text-stroke: 1px #444444;
-    -ms-text-stroke: 1px #444444;
-    -o-text-stroke: 1px #444444;
+main section#topVentas .containerProducto {
+    border: 1px solid #A7A7A7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main section#topVentas .containerProducto:hover {
+    -webkit-box-shadow: 0px 0px 15px #A7A7A7;
+    -moz-box-shadow: 0px 0px 15px #A7A7A7;
+    -ms-box-shadow: 0px 0px 15px #A7A7A7;
+    -o-box-shadow: 0px 0px 15px #A7A7A7;
+}
+
+main section#topVentas .containerProducto .marcaProducto {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 16px;
+    text-align: center;
+}
+
+main section#topVentas .containerProducto .tituloProducto {
+    font-family: "RobotoCondensed-Light";
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+
+main section#topVentas .containerProducto .precioProducto {
+    font-family: "arialbd";
+    font-size: 15px;
+    text-align: center;
+}
+
+main section#topVentas .containerProducto .botonProductoCarrito {
+    text-align: center;
+    border-top: 1px solid #A7A7A7;
+    cursor: pointer;
+}
+
+main section#topVentas .containerProducto .botonProductoCarrito:hover {
+    border: 1px solid #6DE5D1;
+    background-color: #6DE5D1;
+}
+
+main section#topVentas .containerProducto .botonProductoCarrito a {
+    font-family: "arialbd";
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+}
+
+/* footer */
+
+footer {
+    background-color: #6DE5D1;
+}
+
+footer .anchoSecciones .icon-facebook-square-brands,
+footer .anchoSecciones .icon-instagram-square-brands,
+footer .anchoSecciones .icon-twitter-square-brands {
+    font-size: 30px;
+    text-align: right;
+    color: #444444;
+    cursor: pointer;
 }
 
 
@@ -132,12 +202,12 @@ main section#categorias .tituloCategoria {
 @media screen and (min-width: 576px) {
     /* header */
 
-    header nav div#menu .icon-bars-solid {
+    header .anchoSecciones nav div#menu .icon-bars-solid {
         font-size: 25px;
     }
 
-    header div#user-shopbag .icon-user-alt-solid,
-    header div#user-shopbag .icon-shopping-bag-solid {
+    header .anchoSecciones div#user-shopbag .icon-user-alt-solid,
+    header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid {
         font-size: 21px;
     }
 
@@ -154,34 +224,44 @@ main section#categorias .tituloCategoria {
     main section#sliderMarcas .flechas .icon-angle-right-solid {
         font-size: 28px;
     }
-
-    main section#sliderMarcas button {
-        font-size: 15px;
-    }
 }
 
 @media screen and (min-width: 992px) {
     /* header */
 
-    header h1 {
+    header .anchoSecciones {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header .anchoSecciones h1 {
         font-size: 45px;
         letter-spacing: 5px;
     }
 
-    header div#user-shopbag .icon-user-alt-solid,
-    header div#user-shopbag .icon-shopping-bag-solid {
+    header .anchoSecciones div#user-shopbag .icon-user-alt-solid,
+    header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid {
         font-size: 23px;
     }
 
-    header ul .list-group-item{
+    header .anchoSecciones ul .list-group-item{
         border: none;
         background-color: #6DE5D1;
     }
 
-    header ul .list-group-item a{
+    header .anchoSecciones ul .list-group-item a{
         font-size: 16px;
         color: #444444;
         text-decoration:none;
         cursor: pointer;
+    }
+
+    /* main */
+
+    main {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
