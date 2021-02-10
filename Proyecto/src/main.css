@@ -113,6 +113,11 @@ main section#sliderMarcas .flechas .icon-angle-right-solid {
     -o-text-stroke: 1px #444444;
 }
 
+main section#sliderMarcas .flechas .icon-angle-left-solid:hover,
+main section#sliderMarcas .flechas .icon-angle-right-solid:hover {
+    color:  #444444;
+}
+
 main section#sliderMarcas button {
     font-size: 14px;
     color: #444444;
@@ -210,6 +215,43 @@ section#newsletter button {
     border-radius: 50px;
     border: 0;
     outline: none;
+    cursor: pointer;
+}
+
+/* más info de la web */
+
+section#masInfo .tituloInfo {
+    font-family: "arialbd";
+    font-size: 15px;
+    cursor: pointer;
+}
+
+section#masInfo .icon-angle-down-solid {
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+
+    -webkit-text-stroke: 1px #444444;
+    -moz-text-stroke: 1px #444444;
+    -ms-text-stroke: 1px #444444;
+    -o-text-stroke: 1px #444444;
+}
+
+section#masInfo .icon-angle-down-solid:hover {
+    color: #444444;
+}
+
+section#masInfo .menuInfoDeploy {
+    display: none;
+}
+
+section#masInfo .menuInfoDeploy li {
+   list-style: none;
+}
+
+section#masInfo .menuInfoDeploy a {
+    font-size: 15px;
+    color: #444444;
     cursor: pointer;
 }
 
