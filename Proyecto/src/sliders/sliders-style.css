@@ -1,26 +1,26 @@
 @font-face {
     font-family: "RobotoCondensed-Regular";
-    src: url("../fonts/RobotoCondensed-Regular.ttf");
+    src: url("../../fonts/RobotoCondensed-Regular.ttf");
 }
 
 @font-face {
     font-family: "RobotoCondensed-Bold";
-    src: url("../fonts/RobotoCondensed-Bold.ttf");
+    src: url("../../fonts/RobotoCondensed-Bold.ttf");
 }
 
 @font-face {
     font-family: "RobotoCondensed-Light";
-    src: url("../fonts/RobotoCondensed-Light.ttf");
+    src: url("../../fonts/RobotoCondensed-Light.ttf");
 }
 
 @font-face {
     font-family: "msyi";
-    src: url("../fonts/msyi.ttf");
+    src: url("../../fonts/msyi.ttf");
 }
 
 @font-face {
     font-family: "arialbd";
-    src: url("../fonts/arialbd.ttf");
+    src: url("../../fonts/arialbd.ttf");
 }
 
 body {
@@ -104,79 +104,39 @@ main section div#buscador div#lupa {
     cursor: pointer;
 }
 
-/* primer slider */
+/* productos pantallas sliders */
 
-main section#primerSlider .circuloSlider .fa-circle {
-    font-size: 13px;
-    cursor: pointer;
-}
-
-/* slider marcas */
-
-main section#sliderMarcas .flechas .icon-angle-left-solid,
-main section#sliderMarcas .flechas .icon-angle-right-solid {
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
-
-    -webkit-text-stroke: 1px #444444;
-    -moz-text-stroke: 1px #444444;
-    -ms-text-stroke: 1px #444444;
-    -o-text-stroke: 1px #444444;
-}
-
-main section#sliderMarcas .flechas .icon-angle-left-solid:hover,
-main section#sliderMarcas .flechas .icon-angle-right-solid:hover {
-    color:  #444444;
-}
-
-main section#sliderMarcas button {
-    font-size: 14px;
-    color: #444444;
-    background-color: #6DE5D1;
-    border-radius: 50px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-
-main section#sliderMarcas button:hover {
-    background-color: #58CFBB;
-}
-
-/* top ventas y novedades*/
-
-main .topVentasNovedades h2 {
+main .productosSliders h2 {
     font-family: "arialbd";
     font-size: 16px;
     text-align: center;
 }
 
-main .topVentasNovedades .containerProducto {
+main .productosSliders .containerProducto {
     border: 1px solid #A7A7A7;
     border-radius: 5px;
     cursor: pointer;
 }
 
-main .topVentasNovedades .containerProducto:hover {
+main .productosSliders .containerProducto:hover {
     -webkit-box-shadow: 0px 0px 15px #A7A7A7;
     -moz-box-shadow: 0px 0px 15px #A7A7A7;
     -ms-box-shadow: 0px 0px 15px #A7A7A7;
     -o-box-shadow: 0px 0px 15px #A7A7A7;
 }
 
-main .topVentasNovedades .containerProducto a {
+main .productosSliders .containerProducto a {
     text-decoration: none;
 }
 
-main .topVentasNovedades .containerProducto .marcaProducto {
+main .productosSliders .containerProducto .marcaProducto {
     font-family: "RobotoCondensed-Regular";
     font-size: 16px;
     text-align: center;
     color: #444444;
 }
 
-main .topVentasNovedades .containerProducto .tituloProducto {
+main .productosSliders .containerProducto .tituloProducto {
     font-family: "RobotoCondensed-Light";
     font-size: 15px;
     line-height: 18px;
@@ -184,30 +144,42 @@ main .topVentasNovedades .containerProducto .tituloProducto {
     color: #444444;
 }
 
-main .topVentasNovedades .containerProducto .precioProducto {
+main .productosSliders .containerProducto .precioProducto {
     font-family: "arialbd";
     font-size: 15px;
     text-align: center;
     color: #444444;
 }
 
-main .topVentasNovedades .containerProducto .botonProductoCarrito {
+main .productosSliders .containerProducto .precioProductoTachado {
+    font-size: 15px;
+    color: #444444;
+    text-decoration:line-through;
+}
+
+main .productosSliders .containerProducto .precioProductoRojo {
+    font-family: "arialbd";
+    font-size: 15px;
+    color: #DF0000;
+}
+
+main .productosSliders .containerProducto .botonProductoCarrito {
     text-align: center;
     border-top: 1px solid #A7A7A7;
     cursor: pointer;
 }
 
-main .topVentasNovedades .containerProducto .botonProductoCarrito:hover {
+main .productosSliders .containerProducto .botonProductoCarrito:hover {
     border: 1px solid #6DE5D1;
     background-color: #6DE5D1;
 }
 
-main .topVentasNovedades .containerProducto .botonProductoCarrito:active {
+main .productosSliders .containerProducto .botonProductoCarrito:active {
     border: 1px solid #58CFBB;
     background-color: #58CFBB;
 }
 
-main .topVentasNovedades .containerProducto .botonProductoCarrito a {
+main .productosSliders .containerProducto .botonProductoCarrito a {
     font-family: "arialbd";
     font-size: 13px;
     color: #444444;
@@ -320,23 +292,9 @@ footer .anchoSecciones a .icon-twitter-square-brands {
         font-size: 21px;
     }
 
-    /* primer slider */
+    /* productos pantallas sliders */
 
-    main section#primerSlider .circuloSlider .fa-circle {
-        font-size: 15px;
-        cursor: pointer;
-    }
-
-    /* slider marcas */
-
-    main section#sliderMarcas .flechas .icon-angle-left-solid,
-    main section#sliderMarcas .flechas .icon-angle-right-solid {
-        font-size: 28px;
-    }
-
-    /* top ventas */
-
-    main .topVentasNovedades h2 {
+    main .productosSliders h2 {
         font-size: 18px;
     }
 }
@@ -385,9 +343,9 @@ footer .anchoSecciones a .icon-twitter-square-brands {
         margin-right: auto;
     }
 
-    /* top ventas */
+    /* productos pantallas sliders */
 
-    main .topVentasNovedades .containerProducto .botonProductoCarrito a {
+    main .productosSliders .containerProducto .botonProductoCarrito a {
         font-size: 14px;
     }
 
