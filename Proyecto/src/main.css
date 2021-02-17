@@ -91,12 +91,12 @@ main section div#buscador input{
     outline: none;
 }
 
-main section div#buscador input::-ms-clear {
-    display: none;
-}
-
 main section div#buscador input::placeholder {
     color: #A7A7A7;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+    display: none;
 }
 
 main section div#buscador div#lupa {

@@ -39,6 +39,11 @@ header .anchoSecciones nav div#menu-deploy{
     display: none;
 }
 
+header .anchoSecciones a#propose {
+    color: #444444;
+    text-decoration: none;
+}
+
 header .anchoSecciones h1 {
     font-family: "msyi";
     font-size: 38px;
@@ -91,12 +96,12 @@ main section div#buscador input{
     outline: none;
 }
 
-main section div#buscador input::-ms-clear {
-    display: none;
-}
-
 main section div#buscador input::placeholder {
     color: #A7A7A7;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+    display: none;
 }
 
 main section div#buscador div#lupa {
@@ -109,6 +114,12 @@ main section div#buscador div#lupa {
 main .productosSliders h2 {
     font-family: "arialbd";
     font-size: 16px;
+    text-align: center;
+}
+
+main .productosSliders p#parrafoProductos {
+    font-size: 14px;
+    line-height: 18px;
     text-align: center;
 }
 
@@ -296,6 +307,11 @@ footer .anchoSecciones a .icon-twitter-square-brands {
 
     main .productosSliders h2 {
         font-size: 18px;
+    }
+
+    main .productosSliders p#parrafoProductos {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
