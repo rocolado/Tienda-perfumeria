@@ -39,11 +39,6 @@ header .anchoSecciones nav div#menu-deploy{
     display: none;
 }
 
-header .anchoSecciones a#propose {
-    color: #444444;
-    text-decoration: none;
-}
-
 header .anchoSecciones h1 {
     font-family: "msyi";
     font-size: 38px;
@@ -83,7 +78,6 @@ header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid:hover {
     color: #444444;
 }
 
-
 /* buscador */
 
 main section div#buscador {
@@ -109,27 +103,72 @@ main section div#buscador div#lupa {
     cursor: pointer;
 }
 
-/* productos pantallas sliders */
+/* producto principal */
 
-main .productosSliders h2 {
+main section#producto p#marca {
+    font-family: "arialbd";
+    font-size: 16px;
+}
+
+main section#producto p#descripcion {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+main section#producto p#precio {
+    font-family: "arialbd";
+    font-size: 16px;
+}
+
+main section#producto div#controlUnidades {
+    border: 1px solid #A7A7A7;
+    border-radius: 5px;
+}
+
+main section#producto div#controlUnidades button {
+    font-family: "arialbd";
+    font-size: 13px;
+    color: #444444;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+main section#producto .icon-heart-solid {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+
+    -webkit-text-stroke: 2px #444444;
+    -moz-text-stroke: 2px #444444;
+    -ms-text-stroke: 2px #444444;
+    -o-text-stroke: 2px #444444;
+}
+
+main section#producto .icon-heart-solid:hover {
+    color: red;
+
+    -webkit-text-stroke: 2px red;
+    -moz-text-stroke: 2px red;
+    -ms-text-stroke: 2px red;
+    -o-text-stroke: 2px red;
+}
+
+/* artículos relacionados */
+
+main section#articulosRelacionados h2 {
     font-family: "arialbd";
     font-size: 16px;
     text-align: center;
 }
 
-main .productosSliders p#parrafoProductos {
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-}
-
-main .productosSliders .containerProducto {
+main section#articulosRelacionados .containerProducto {
     border: 1px solid #A7A7A7;
     border-radius: 5px;
     cursor: pointer;
 }
 
-main .productosSliders .containerProducto:hover {
+main section#articulosRelacionados .containerProducto:hover {
     box-shadow: 0px 0px 15px #A7A7A7;
     -webkit-box-shadow: 0px 0px 15px #A7A7A7;
     -moz-box-shadow: 0px 0px 15px #A7A7A7;
@@ -137,18 +176,18 @@ main .productosSliders .containerProducto:hover {
     -o-box-shadow: 0px 0px 15px #A7A7A7;
 }
 
-main .productosSliders .containerProducto a {
+main section#articulosRelacionados .containerProducto a {
     text-decoration: none;
 }
 
-main .productosSliders .containerProducto .marcaProducto {
+main section#articulosRelacionados .containerProducto .marcaProducto {
     font-family: "RobotoCondensed-Regular";
     font-size: 16px;
     text-align: center;
     color: #444444;
 }
 
-main .productosSliders .containerProducto .tituloProducto {
+main section#articulosRelacionados .containerProducto .tituloProducto {
     font-family: "RobotoCondensed-Light";
     font-size: 15px;
     line-height: 18px;
@@ -156,42 +195,30 @@ main .productosSliders .containerProducto .tituloProducto {
     color: #444444;
 }
 
-main .productosSliders .containerProducto .precioProducto {
+main section#articulosRelacionados .containerProducto .precioProducto {
     font-family: "arialbd";
     font-size: 15px;
     text-align: center;
     color: #444444;
 }
 
-main .productosSliders .containerProducto .precioProductoTachado {
-    font-size: 15px;
-    color: #444444;
-    text-decoration:line-through;
-}
-
-main .productosSliders .containerProducto .precioProductoRojo {
-    font-family: "arialbd";
-    font-size: 15px;
-    color: #DF0000;
-}
-
-main .productosSliders .containerProducto .botonProductoCarrito {
+main section#articulosRelacionados .containerProducto .botonProductoCarrito {
     text-align: center;
     border-top: 1px solid #A7A7A7;
     cursor: pointer;
 }
 
-main .productosSliders .containerProducto .botonProductoCarrito:hover {
+main section#articulosRelacionados .containerProducto .botonProductoCarrito:hover {
     border: 1px solid #6DE5D1;
     background-color: #6DE5D1;
 }
 
-main .productosSliders .containerProducto .botonProductoCarrito:active {
+main section#articulosRelacionados .containerProducto .botonProductoCarrito:active {
     border: 1px solid #58CFBB;
     background-color: #58CFBB;
 }
 
-main .productosSliders .containerProducto .botonProductoCarrito a {
+main section#articulosRelacionados .containerProducto .botonProductoCarrito a {
     font-family: "arialbd";
     font-size: 13px;
     color: #444444;
@@ -233,7 +260,7 @@ section#masInfo .icon-angle-down-solid {
     font-size: 23px;
     color: white;
     cursor: pointer;
-    
+
     -webkit-text-stroke: 1px #444444;
     -moz-text-stroke: 1px #444444;
     -ms-text-stroke: 1px #444444;
@@ -304,15 +331,25 @@ footer .anchoSecciones a .icon-twitter-square-brands {
         font-size: 21px;
     }
 
-    /* productos pantallas sliders */
+    /* producto principal */
 
-    main .productosSliders h2 {
+    main section#producto p#marca {
         font-size: 18px;
     }
 
-    main .productosSliders p#parrafoProductos {
+    main section#producto p#descripcion {
         font-size: 16px;
         line-height: 20px;
+    }
+
+    main section#producto p#precio {
+        font-size: 18px;
+    }
+
+    /* artículos relacionados */
+
+    main .articulosRelacionados h2 {
+        font-size: 18px;
     }
 }
 
@@ -360,9 +397,9 @@ footer .anchoSecciones a .icon-twitter-square-brands {
         margin-right: auto;
     }
 
-    /* productos pantallas sliders */
+    /* artículos relacionados */
 
-    main .productosSliders .containerProducto .botonProductoCarrito a {
+    main .articulosRelacionados .containerProducto .botonProductoCarrito a {
         font-size: 14px;
     }
 

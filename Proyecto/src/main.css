@@ -159,6 +159,7 @@ main .topVentasNovedades .containerProducto {
 }
 
 main .topVentasNovedades .containerProducto:hover {
+    box-shadow: 0px 0px 15px #A7A7A7;
     -webkit-box-shadow: 0px 0px 15px #A7A7A7;
     -moz-box-shadow: 0px 0px 15px #A7A7A7;
     -ms-box-shadow: 0px 0px 15px #A7A7A7;
