@@ -33,10 +33,18 @@ body {
 
 header {
     background-color: #6DE5D1;
+    z-index: 9;
+    top: 0px;
+    position: sticky;
 }
 
 header .anchoSecciones nav div#menu-deploy{
     display: none;
+}
+
+header .anchoSecciones a#propose {
+    color: #444444;
+    text-decoration: none;
 }
 
 header .anchoSecciones h1 {
@@ -110,7 +118,7 @@ main section#producto p#marca {
     font-size: 16px;
 }
 
-main section#producto p#descripcion {
+main section#producto p#infoProducto {
     font-size: 14px;
     line-height: 18px;
 }
@@ -152,6 +160,43 @@ main section#producto .icon-heart-solid:hover {
     -moz-text-stroke: 2px red;
     -ms-text-stroke: 2px red;
     -o-text-stroke: 2px red;
+}
+
+main section#descripcion p#tituloDescripcion {
+    font-family: "arialbd";
+    font-size: 20px;
+    color: #6DE5D1;
+}
+
+main section#descripcion .parrafoDescripcion {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+main section#descripcion .parrafoDescripcion span {
+    font-family: "arialbd";
+}
+
+main .botonCarrito {
+    background-color: white;
+    z-index: 8;
+    bottom: 0px;
+    position: sticky;
+}
+
+main .botonCarrito button {
+    font-family: "arialbd";
+    font-size: 13px;
+    color: #444444;
+    background-color: #6DE5D1;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+main .botonCarrito button:hover {
+    background-color: #58CFBB;
 }
 
 /* artículos relacionados */
@@ -238,6 +283,7 @@ section#newsletter .icon-paper-plane-regular {
 section#newsletter p {
     font-family: "arialbd";
     font-size: 16px;
+    text-align: center;
 }
 
 section#newsletter button {
@@ -337,13 +383,22 @@ footer .anchoSecciones a .icon-twitter-square-brands {
         font-size: 18px;
     }
 
-    main section#producto p#descripcion {
+    main section#producto p#infoProducto {
         font-size: 16px;
         line-height: 20px;
     }
 
     main section#producto p#precio {
         font-size: 18px;
+    }
+
+    main section#descripcion .parrafoDescripcion {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    main div#botonCarrito button {
+        font-size: 16px;
     }
 
     /* artículos relacionados */
