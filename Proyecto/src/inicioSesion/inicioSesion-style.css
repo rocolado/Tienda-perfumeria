@@ -1,0 +1,310 @@
+@font-face {
+    font-family: "RobotoCondensed-Regular";
+    src: url("../../fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Bold";
+    src: url("../../fonts/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Light";
+    src: url("../../fonts/RobotoCondensed-Light.ttf");
+}
+
+@font-face {
+    font-family: "msyi";
+    src: url("../../fonts/msyi.ttf");
+}
+
+@font-face {
+    font-family: "arialbd";
+    src: url("../../fonts/arialbd.ttf");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+    position: relative;
+}
+
+/* header */
+
+header {
+    background-color: #6DE5D1;
+    z-index: 9;
+    top: 0px;
+    position: sticky;
+}
+
+header .anchoSecciones nav div#menu-deploy{
+    display: none;
+}
+
+header .anchoSecciones a#propose {
+    color: #444444;
+    text-decoration: none;
+}
+
+header .anchoSecciones h1 {
+    font-family: "msyi";
+    font-size: 38px;
+    letter-spacing: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .anchoSecciones div#menu .icon-bars-solid {
+    font-size: 23px;
+    text-align: right;
+    color: #6DE5D1;
+    cursor: pointer;
+
+    -webkit-text-stroke: 1px #444444;
+    -moz-text-stroke: 1px #444444;
+    -ms-text-stroke: 1px #444444;
+    -o-text-stroke: 1px #444444;
+}
+
+header .anchoSecciones div#user-shopbag .icon-user-alt-solid,
+header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid {
+    font-size: 20px;
+    text-align: right;
+    color: #6DE5D1;
+    cursor: pointer;
+
+    -webkit-text-stroke: 1px #444444;
+    -moz-text-stroke: 1px #444444;
+    -ms-text-stroke: 1px #444444;
+    -o-text-stroke: 1px #444444;
+}
+
+header .anchoSecciones div#menu .icon-bars-solid:hover,
+header .anchoSecciones div#user-shopbag .icon-user-alt-solid:hover,
+header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid:hover {
+    color: #444444;
+}
+
+/* inicioSesion*/
+
+main .inicioSesion h2 {
+    font-family: "arialbd";
+    font-size: 16px;
+    text-align: center;
+}
+
+main .inicioSesion .botonesInicioSesion {
+    font-family: "arialbd";
+    font-size: 14px;
+    color: #444444;
+    background-color: #6DE5D1;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+main .inicioSesion .botonesInicioSesion:hover {
+    background-color: #58CFBB;
+}
+
+/* newsletter */
+
+section#newsletter {
+    background-color: #F1F1F1;
+}
+
+section#newsletter .icon-paper-plane-regular {
+    font-size: 28px;
+}
+
+section#newsletter p {
+    font-family: "arialbd";
+    font-size: 16px;
+    text-align: center;
+}
+
+section#newsletter button {
+    font-size: 14px;
+    color: #444444;
+    background-color: #6DE5D1;
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+section#newsletter button:hover {
+    background-color: #58CFBB;
+}
+
+/* más info de la web */
+
+section#masInfo .icon-angle-down-solid {
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+
+    -webkit-text-stroke: 1px #444444;
+    -moz-text-stroke: 1px #444444;
+    -ms-text-stroke: 1px #444444;
+    -o-text-stroke: 1px #444444;
+}
+
+section#masInfo .icon-angle-down-solid:hover {
+    color: #444444;
+}
+
+section#masInfo .menuInfoDeploy {
+    display: none;
+}
+
+section#masInfo .menuInfoDeploy li,
+section#masInfoLaptop .menuInfoLaptop li {
+   list-style: none;
+}
+
+section#masInfo .tituloInfo,
+section#masInfoLaptop .menuInfoLaptop a {
+    font-size: 15px;
+    color: #444444;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section#masInfoLaptop .menuInfoLaptop .tituloInfo a {
+    font-family: "arialbd";
+    font-size: 15px;
+    color: #444444;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    background-color: #6DE5D1;
+}
+
+footer .anchoSecciones a {
+    font-size: 15px;
+    color: #444444;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer .anchoSecciones a .icon-facebook-square-brands,
+footer .anchoSecciones a .icon-instagram-square-brands,
+footer .anchoSecciones a .icon-twitter-square-brands {
+    font-size: 23px;
+    color: #444444;
+    cursor: pointer;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 576px) {
+    /* header */
+
+    header .anchoSecciones nav div#menu .icon-bars-solid {
+        font-size: 25px;
+    }
+
+    header .anchoSecciones div#user-shopbag .icon-user-alt-solid,
+    header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid {
+        font-size: 21px;
+    }
+
+    /* primer slider */
+
+    main section#primerSlider .circuloSlider .fa-circle {
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    /* slider marcas */
+
+    main section#sliderMarcas .flechas .icon-angle-left-solid,
+    main section#sliderMarcas .flechas .icon-angle-right-solid {
+        font-size: 28px;
+    }
+
+    /* top ventas */
+
+    main .topVentasNovedades h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* header */
+
+    header .anchoSecciones {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header .anchoSecciones h1 {
+        font-size: 45px;
+        letter-spacing: 5px;
+    }
+
+    header .anchoSecciones div#user-shopbag .icon-user-alt-solid,
+    header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid {
+        font-size: 23px;
+    }
+
+    header .anchoSecciones ul .list-group-item{
+        border: none;
+        background-color: #6DE5D1;
+    }
+
+    header .anchoSecciones ul .list-group-item:hover{
+        border: none;
+        background-color: #58CFBB;
+    }
+
+    header .anchoSecciones ul .list-group-item a{
+        font-size: 16px;
+        color: #444444;
+        text-decoration:none;
+        cursor: pointer;
+    }
+
+    /* main */
+
+    main {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* top ventas */
+
+    main .topVentasNovedades .containerProducto .botonProductoCarrito a {
+        font-size: 14px;
+    }
+
+    /* más info de la web */
+
+    section#masInfoLaptop {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* footer */
+
+    footer .anchoSecciones {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .anchoSecciones a .icon-facebook-square-brands,
+    footer .anchoSecciones a .icon-instagram-square-brands,
+    footer .anchoSecciones a .icon-twitter-square-brands {
+        font-size: 26px;
+    }
+}
