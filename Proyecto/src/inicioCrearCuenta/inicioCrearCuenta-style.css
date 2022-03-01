@@ -1,26 +1,26 @@
 @font-face {
     font-family: "RobotoCondensed-Regular";
-    src: url("../fonts/RobotoCondensed-Regular.ttf");
+    src: url("../../fonts/RobotoCondensed-Regular.ttf");
 }
 
 @font-face {
     font-family: "RobotoCondensed-Bold";
-    src: url("../fonts/RobotoCondensed-Bold.ttf");
+    src: url("../../fonts/RobotoCondensed-Bold.ttf");
 }
 
 @font-face {
     font-family: "RobotoCondensed-Light";
-    src: url("../fonts/RobotoCondensed-Light.ttf");
+    src: url("../../fonts/RobotoCondensed-Light.ttf");
 }
 
 @font-face {
     font-family: "msyi";
-    src: url("../fonts/msyi.ttf");
+    src: url("../../fonts/msyi.ttf");
 }
 
 @font-face {
     font-family: "arialbd";
-    src: url("../fonts/arialbd.ttf");
+    src: url("../../fonts/arialbd.ttf");
 }
 
 body {
@@ -40,6 +40,11 @@ header {
 
 header .anchoSecciones nav div#menu-deploy{
     display: none;
+}
+
+header .anchoSecciones a#propose {
+    color: #444444;
+    text-decoration: none;
 }
 
 header .anchoSecciones h1 {
@@ -81,141 +86,36 @@ header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid:hover {
     color: #444444;
 }
 
+/* inicioSesion y crearCuenta*/
 
-/* buscador */
-
-main section div#buscador {
-    border-bottom: 1px solid #A7A7A7;
-}
-
-main section div#buscador input{
+main .inicioSesion h2 {
+    font-family: "arialbd";
     font-size: 16px;
-    border: 0;
-    outline: none;
+    text-align: center;
 }
 
-main section div#buscador input::placeholder {
-    color: #A7A7A7;
+main .inicioSesion a {
+    color: #444444;
 }
 
-[type="search"]::-webkit-search-cancel-button {
-    display: none;
-}
-
-main section div#buscador div#lupa {
-    font-size: 17px;
-    cursor: pointer;
-}
-
-/* primer slider */
-
-main section#primerSlider .circuloSlider .fa-circle {
-    font-size: 13px;
-    cursor: pointer;
-}
-
-/* slider marcas */
-
-main section#sliderMarcas .flechas .icon-angle-left-solid,
-main section#sliderMarcas .flechas .icon-angle-right-solid {
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
-
-    -webkit-text-stroke: 1px #444444;
-    -moz-text-stroke: 1px #444444;
-    -ms-text-stroke: 1px #444444;
-    -o-text-stroke: 1px #444444;
-}
-
-main section#sliderMarcas .flechas .icon-angle-left-solid:hover,
-main section#sliderMarcas .flechas .icon-angle-right-solid:hover {
-    color:  #444444;
-}
-
-main section#sliderMarcas button {
+main .inicioSesion .botonesInicioSesion {
+    font-family: "arialbd";
     font-size: 14px;
+    text-align: center;
     color: #444444;
+    text-decoration: none;
     background-color: #6DE5D1;
-    border-radius: 50px;
     border: 0;
     outline: none;
     cursor: pointer;
 }
 
-main section#sliderMarcas button:hover {
+main .inicioSesion .botonesInicioSesion:hover {
     background-color: #58CFBB;
 }
 
-/* top ventas y novedades*/
-
-main .topVentasNovedades h2 {
-    font-family: "arialbd";
-    font-size: 16px;
-    text-align: center;
-}
-
-main .topVentasNovedades .containerProducto {
-    border: 1px solid #A7A7A7;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-main .topVentasNovedades .containerProducto:hover {
-    box-shadow: 0px 0px 15px #A7A7A7;
-    -webkit-box-shadow: 0px 0px 15px #A7A7A7;
-    -moz-box-shadow: 0px 0px 15px #A7A7A7;
-    -ms-box-shadow: 0px 0px 15px #A7A7A7;
-    -o-box-shadow: 0px 0px 15px #A7A7A7;
-}
-
-main .topVentasNovedades .containerProducto a {
-    text-decoration: none;
-}
-
-main .topVentasNovedades .containerProducto .marcaProducto {
-    font-family: "RobotoCondensed-Regular";
-    font-size: 16px;
-    text-align: center;
-    color: #444444;
-}
-
-main .topVentasNovedades .containerProducto .tituloProducto {
-    font-family: "RobotoCondensed-Light";
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #444444;
-}
-
-main .topVentasNovedades .containerProducto .precioProducto {
-    font-family: "arialbd";
-    font-size: 15px;
-    text-align: center;
-    color: #444444;
-}
-
-main .topVentasNovedades .containerProducto .botonProductoCarrito {
-    text-align: center;
-    border-top: 1px solid #A7A7A7;
-    cursor: pointer;
-}
-
-main .topVentasNovedades .containerProducto .botonProductoCarrito:hover {
-    border: 1px solid #6DE5D1;
-    background-color: #6DE5D1;
-}
-
-main .topVentasNovedades .containerProducto .botonProductoCarrito:active {
-    border: 1px solid #58CFBB;
-    background-color: #58CFBB;
-}
-
-main .topVentasNovedades .containerProducto .botonProductoCarrito a {
-    font-family: "arialbd";
-    font-size: 13px;
-    color: #444444;
-    text-decoration: none;
+main .inicioSesion hr {
+    border: 1px solid #F1F1F1;
 }
 
 /* newsletter */
@@ -302,10 +202,6 @@ footer .anchoSecciones a {
     text-decoration: none;
 }
 
-footer .anchoSecciones a:hover {
-    font-weight: bold;
-}
-
 footer .anchoSecciones a .icon-facebook-square-brands,
 footer .anchoSecciones a .icon-instagram-square-brands,
 footer .anchoSecciones a .icon-twitter-square-brands {
@@ -327,26 +223,6 @@ footer .anchoSecciones a .icon-twitter-square-brands {
     header .anchoSecciones div#user-shopbag .icon-user-alt-solid,
     header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid {
         font-size: 21px;
-    }
-
-    /* primer slider */
-
-    main section#primerSlider .circuloSlider .fa-circle {
-        font-size: 15px;
-        cursor: pointer;
-    }
-
-    /* slider marcas */
-
-    main section#sliderMarcas .flechas .icon-angle-left-solid,
-    main section#sliderMarcas .flechas .icon-angle-right-solid {
-        font-size: 28px;
-    }
-
-    /* top ventas */
-
-    main .topVentasNovedades h2 {
-        font-size: 18px;
     }
 }
 
@@ -392,12 +268,6 @@ footer .anchoSecciones a .icon-twitter-square-brands {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    /* top ventas */
-
-    main .topVentasNovedades .containerProducto .botonProductoCarrito a {
-        font-size: 14px;
     }
 
     /* más info de la web */

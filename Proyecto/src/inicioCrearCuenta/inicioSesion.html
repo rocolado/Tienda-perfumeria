@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../fonts/icons/icons.css">
     <link rel="stylesheet" href="../../fonts/webfonts/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="sliders-style.css">
+    <link rel="stylesheet" href="inicioCrearCuenta-style.css">
 
     <script src="../../utils/modernizr-custom.js"></script>
 </head>
@@ -48,9 +48,7 @@
         
                     <div class="col-2 | d-flex align-items-center justify-content-end | px-0 pt-1" id="user-shopbag">
                         <div class="pr-1 pr-sm-0">
-                            <a href="../inicioCrearCuenta/inicioSesion.html">
-                                <i class="icon-user-alt-solid"></i>
-                            </a>
+                            <i class="icon-user-alt-solid"></i>
                         </div>
                         
                         <div class="pl-1 pl-sm-2 pl-lg-3">
@@ -75,140 +73,33 @@
         </div>
     </header>
     
-    <main>
-        <section class="container-fluid | p-lg-0">
+    <main class="pb-5">
+        <section class="inicioSesion | container-fluid | mt-lg-3 p-lg-0">
             <div class="row | mr-1 ml-1 mr-md-4 ml-md-4 mr-lg-0 ml-lg-0">
-                <div class="col-12 | d-flex align-items-center justify-content-between | m-0 p-0 py-1" id="buscador">
-                    <input class="w-100" type="search" placeholder="Busca un producto, una marca...">
-                    
-                    <div class="px-0 pt-1" id="lupa">
-                        <i class="icon-search-solid"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <div class="col-12 col-lg-6 | d-flex flex-column | mt-5 mb-lg-5 p-0 px-lg-3">
+                    <h2 class="pb-4 mb-lg-3">Inicia sesión</h2>
 
-        <section class="container-fluid | p-lg-0">
-            <div class="row | mr-1 ml-1 mr-md-4 ml-md-4 mr-lg-0 ml-lg-0">
-                <div class="col-12 | d-flex d-md-none justify-content-center | mt-3 p-0">
-                    <div id="slider1">
-                        <img class="img-fluid" src="../../img/version_tablet/tablet-slider_3.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="col-12 | d-none d-md-flex justify-content-center | mt-3 p-0">
-                    <div id="slider1">
-                        <img class="img-fluid" src="../../img/version_ordenador/ordenador-slider_2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="productosSliders | container-fluid | p-lg-0">
-            <div class="row | mr-1 ml-1 mr-md-4 ml-md-4 mr-lg-0 ml-lg-0">
-                <div class="col-12 | d-flex justify-content-center | mt-4 mt-sm-5 p-0">
-                    <h2 class="m-0">Bell Hypoallergenic - Hemp Seed</h2>
-                </div>
-            </div>
-
-            <div class="row | mr-1 ml-1 mr-md-4 ml-md-4 mr-lg-0 ml-lg-0">
-                <div class="col-12 | d-flex justify-content-center | mt-2 p-0">
-                    <p class="d-flex d-sm-none | m-0" id="parrafoProductos">Línea vegana, compuesta por productos ricos en antioxidantes, vitaminas y minerales.</p>
-                    <p class="d-none d-sm-flex | m-0" id="parrafoProductos">Línea vegana, compuesta por productos ricos <br> en antioxidantes, vitaminas y minerales.</p>
-                </div>
-            </div>
-
-            <div class="row | mr-1 ml-1 mr-md-4 ml-md-4 mr-lg-0 ml-lg-0">
-                <div class="col-6 col-sm-3 | mt-3 mt-sm-4 mt-xl-5 pl-0 pr-1 pl-sm-1 pl-md-2 pr-md-2 pl-lg-0 pr-lg-4">
-                    <div class="containerProducto">
-                        <a href="#">
-                            <div class="d-flex justify-content-center">
-                                <img class="w-75 img-fluid | pt-2" src="../../img/shared/bell_mascara.jpg" alt="">
-                            </div>
-                            
-                            <p class="marcaProducto | m-0 pt-2">Bell Hypoallergenic</p>
-                            <p class="tituloProducto | m-0 p-0">Máscara de pestañas <br> Great Lashes</p>
-                            <p class="precioProducto | m-0 py-1">7,99 €</p>
-                        </a>
-    
-                        <div class="botonProductoCarrito | py-2">
-                            <a href="#">Añadir al carrito</a>
+                    <form action="">
+                        <div class="form-group">
+                            <input class="form-control" id="email" type="email" placeholder="Email">
                         </div>
-                    </div>
+
+                        <div class="form-group | py-lg-2">
+                            <input class="form-control" id="email" type="email" placeholder="Contraseña">
+                        </div>
+
+                        <a href="">¿Has olvidado la contraseña?</a>
+
+                        <a class="botonesInicioSesion | form-control | mt-2" type="submit">Acceder</a>
+                    </form>
                 </div>
 
-                <div class="col-6 col-sm-3 | mt-3 mt-sm-4 mt-xl-5 pl-1 pr-0 pr-sm-1 pl-md-2 pr-md-2 pr-lg-3">
-                    <div class="containerProducto">
-                        <a href="">
-                            <div class="d-flex justify-content-center">
-                                <img class="w-75 img-fluid | pt-2" src="../../img/shared/bell_prebase.jpg" alt="">
-                            </div>
-                            
-                            <p class="marcaProducto | m-0 pt-2">Bell Hypoallergenic</p>
-                            <p class="tituloProducto | m-0 p-0">Prebase de maquillaje <br> Anti Smog</p>
-                            <p class="precioProducto | m-0 py-1">8,99 €</p>
-                        </a>
-    
-                        <div class="botonProductoCarrito | py-2">
-                            <a href="#">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
+                <hr class="col-12 d-lg-none | mt-5 mb-0 p-0">
                 
-                <div class="col-6 col-sm-3 | mt-2 mt-sm-4 mt-xl-5 pl-0 pr-1 pl-sm-1 pl-md-2 pr-md-2 pl-lg-3">
-                    <div class="containerProducto">
-                        <a href="">
-                            <div class="d-flex justify-content-center">
-                                <img class="w-75 img-fluid | pt-2" src="../../img/shared/bell_lip.jpg" alt="">
-                            </div>
-                            
-                            <p class="marcaProducto | m-0 pt-2">Bell Hypoallergenic</p>
-                            <p class="tituloProducto | m-0 p-0">Aceite labial <br> Lip Oil Elixir</p>
-                            <p class="precioProducto | m-0 py-1">6,99 €</p>
-                        </a>
+                <div class="col-12 col-lg-6 | d-flex flex-column | mt-5 p-0 px-lg-3">
+                    <h2 class="pb-4 mb-lg-3">¿No tienes una cuenta?<br>Regístrate</h2>
     
-                        <div class="botonProductoCarrito | py-2">
-                            <a href="#">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-6 col-sm-3 | mt-2 mt-sm-4 mt-xl-5 pl-1 pr-0 pr-sm-1 pl-md-2 pr-md-2 pl-lg-4 pr-lg-0">
-                    <div class="containerProducto">
-                        <a href="">
-                            <div class="d-flex justify-content-center">
-                                <img class="w-75 img-fluid | pt-2" src="../../img/shared/bell_base.jpg" alt="">
-                            </div>
-                            
-                            <p class="marcaProducto | m-0 pt-2">Bell Hypoallergenic</p>
-                            <p class="tituloProducto | m-0 p-0">Base de maquillaje <br> Nude & Moist</p>
-                            <p class="precioProducto | m-0 py-1">11,99 €</p>
-                        </a>
-
-                        <div class="botonProductoCarrito | py-2">
-                            <a href="#">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row | mr-1 ml-1 mr-md-4 ml-md-4 mr-lg-0 ml-lg-0">
-                <div class="col-6 col-sm-3 | mt-2 mt-md-3 mt-lg-4 pl-0 pr-1 pl-sm-1 pl-md-2 pr-md-2 pl-lg-0 pr-lg-4">
-                    <div class="containerProducto">
-                        <a href="">
-                            <div class="d-flex justify-content-center">
-                                <img class="w-75 img-fluid | pt-2" src="../../img/shared/bell_skin.jpg" alt="">
-                            </div>
-                            
-                            <p class="marcaProducto | m-0 pt-2">Bell Hypoallergenic</p>
-                            <p class="tituloProducto | m-0 p-0">Aceite facial <br> Skin Oil Elixir</p>
-                            <p class="precioProducto | m-0 py-1">9,99 €</p>
-                        </a>
-    
-                        <div class="botonProductoCarrito | py-2">
-                            <a href="#">Añadir al carrito</a>
-                        </div>
-                    </div>
+                    <a href="crearCuenta.html" class="botonesInicioSesion | form-control" type="button">Crear cuenta</a>
                 </div>
             </div>
         </section>

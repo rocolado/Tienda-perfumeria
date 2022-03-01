@@ -86,26 +86,57 @@ header .anchoSecciones div#user-shopbag .icon-shopping-bag-solid:hover {
     color: #444444;
 }
 
-/* inicioSesion*/
+/* buscador */
 
-main .inicioSesion h2 {
+main section div#buscador {
+    border-bottom: 1px solid #A7A7A7;
+}
+
+main section div#buscador input{
+    font-size: 16px;
+    border: 0;
+    outline: none;
+}
+
+main section div#buscador input::placeholder {
+    color: #A7A7A7;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+main section div#buscador div#lupa {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* logos marcas */
+
+main .marcasLogos h2,
+main .listadoMarcas h2 {
     font-family: "arialbd";
     font-size: 16px;
     text-align: center;
 }
 
-main .inicioSesion .botonesInicioSesion {
-    font-family: "arialbd";
-    font-size: 14px;
-    color: #444444;
-    background-color: #6DE5D1;
-    border: 0;
-    outline: none;
-    cursor: pointer;
+/* listado marcas */
+
+main .listadoMarcas div#recuadroLetra {
+    background-color: #F5F5F5;
 }
 
-main .inicioSesion .botonesInicioSesion:hover {
-    background-color: #58CFBB;
+main .listadoMarcas span {
+    font-family: "arialbd";
+    font-size: 20px;
+    color: #58CFBB;
+}
+
+main .listadoMarcas a {
+    font-size: 16px;
+    color: #444444;
+    text-decoration:none;
+    cursor: pointer;
 }
 
 /* newsletter */
@@ -215,25 +246,12 @@ footer .anchoSecciones a .icon-twitter-square-brands {
         font-size: 21px;
     }
 
-    /* primer slider */
+    /* logos marcas */
 
-    main section#primerSlider .circuloSlider .fa-circle {
-        font-size: 15px;
-        cursor: pointer;
-    }
+    
 
-    /* slider marcas */
+    /* listado marcas */
 
-    main section#sliderMarcas .flechas .icon-angle-left-solid,
-    main section#sliderMarcas .flechas .icon-angle-right-solid {
-        font-size: 28px;
-    }
-
-    /* top ventas */
-
-    main .topVentasNovedades h2 {
-        font-size: 18px;
-    }
 }
 
 @media screen and (min-width: 992px) {
@@ -280,11 +298,13 @@ footer .anchoSecciones a .icon-twitter-square-brands {
         margin-right: auto;
     }
 
-    /* top ventas */
+    /* logos marcas */
 
-    main .topVentasNovedades .containerProducto .botonProductoCarrito a {
-        font-size: 14px;
-    }
+    
+
+    /* listado marcas */
+
+    
 
     /* más info de la web */
 
