@@ -120,6 +120,10 @@ main .listadoMarcas h2 {
     text-align: center;
 }
 
+main .marcasLogos .containerProducto img {
+    width: 70%;
+}
+
 /* listado marcas */
 
 main .listadoMarcas div#recuadroLetra {
@@ -234,6 +238,14 @@ footer .anchoSecciones a .icon-twitter-square-brands {
 
 /* media queries */
 
+@media screen and (min-width: 400px) {
+    /* logos marcas */
+
+    main .marcasLogos .containerProducto img {
+        width: 50%;
+    }
+}
+
 @media screen and (min-width: 576px) {
     /* header */
 
@@ -248,10 +260,9 @@ footer .anchoSecciones a .icon-twitter-square-brands {
 
     /* logos marcas */
 
-    
-
-    /* listado marcas */
-
+    main .marcasLogos .containerProducto img {
+        width: 75%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -300,11 +311,15 @@ footer .anchoSecciones a .icon-twitter-square-brands {
 
     /* logos marcas */
 
-    
+    main .marcasLogos .containerProducto img {
+        width: 55%;
+    }
 
     /* listado marcas */
 
-    
+    main .listadoMarcas div#recuadroLetra {
+        text-align: center;
+    }
 
     /* más info de la web */
 
