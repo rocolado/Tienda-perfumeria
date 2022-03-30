@@ -23,25 +23,25 @@ const showSlides = () => {
     setTimeout(showSlides,2000);
 }
 
-const cambioCirculo = () => {
-    let circuloSlider = document.querySelectorAll(".circuloSlider");
+// const cambioCirculo = () => {
+//     let circuloSlider = document.querySelectorAll(".circuloSlider");
 
-    for (let j = 0; j < circuloSlider.length; j++) {
-        circuloSlider[j].classList.replace("far", "fas");
-    }
+//     for (let j = 0; j < circuloSlider.length; j++) {
+//         circuloSlider[j].classList.replace("far", "fas");
+//     }
 
-    circulosIndex++;
+//     circulosIndex++;
 
-    if (circulosIndex > circuloSlider.length) {
-        circulosIndex = 1;
-    }
+//     if (circulosIndex > circuloSlider.length) {
+//         circulosIndex = 1;
+//     }
 
-    circuloSlider[circulosIndex-1].classList.replace("fas", "far");
-    setTimeout(showSlides,2000);
-}
+//     circuloSlider[circulosIndex-1].classList.replace("fas", "far");
+//     setTimeout(showSlides,2000);
+// }
 
 showSlides();
-cambioCirculo();
+// cambioCirculo();
 
 
 // const cambioCirculos = () => {
