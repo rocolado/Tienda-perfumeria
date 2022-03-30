@@ -2,26 +2,70 @@
 //     btnCirculo2 = document.querySelector("#circulo2"),
 //     btnCirculo3 = document.querySelector("#circulo3");
 
+const primerSlider = document.querySelectorAll(".primerSlider");
+const segundoSlider = document.querySelectorAll(".segundoSlider");
+const circuloSlider = document.querySelectorAll(".circuloSlider");
+
 let slideIndex = 0;
 let circulosIndex = 0;
 
-const showSlides = () => {
-    let slidesPromos = document.querySelectorAll(".slidesPromos");
-    slidesPromos[0].style.display = "flex";
+
+const mostrarPrimerSlider = () => {
+    primerSlider[0].style.display = "none";
     
-    for (let i = 1; i < slidesPromos.length; i++) {
-        slidesPromos[i].style.display = "none";
+    for (let i = 1; i < primerSlider.length; i++) {
+        primerSlider[i].style.display = "none";
     }
     
     slideIndex++;
     
-    if (slideIndex > slidesPromos.length) {
+    if (slideIndex > primerSlider.length) {
         slideIndex = 1;
     }
     
-    slidesPromos[slideIndex-1].style.display = "block";
-    setTimeout(showSlides,2000);
+    primerSlider[slideIndex-1].style.display = "block";
+    setTimeout(mostrarPrimerSlider, 2000);
 }
+
+const mostrarSegundoSlider = () => {
+    segundoSlider[0].style.display = "none";
+
+    for (let i = 1; i < segundoSlider.length; i++) {
+        segundoSlider[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > primerSlider.length) {
+        slideIndex = 1;
+    }
+
+    segundoSlider[slideIndex-1].style.display = "block";
+    setTimeout(mostrarSegundoSlider, 2000);
+}
+
+mostrarPrimerSlider();
+mostrarSegundoSlider();
+
+
+const cambioCirculos = () => {
+    circuloSlider[0].classList.replace("fas", "far");
+
+    for (let i = 1; i < circuloSlider.length; i++) {
+        circuloSlider[i].classList.replace("fas", "far");
+    }
+
+    slideIndex++;
+
+    if (slideIndex > circuloSlider.length) {
+        slideIndex = 1;
+    }
+
+    circuloSlider[slideIndex-1].classList.replace("far", "fas");
+    setTimeout(cambioCirculos, 2000);
+}
+
+cambioCirculos();
 
 // const cambioCirculo = () => {
 //     let circuloSlider = document.querySelectorAll(".circuloSlider");
@@ -40,7 +84,6 @@ const showSlides = () => {
 //     setTimeout(showSlides,2000);
 // }
 
-showSlides();
 // cambioCirculo();
 
 
