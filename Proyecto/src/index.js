@@ -6,7 +6,8 @@ const primerSlider = document.querySelectorAll(".primerSlider");
 const segundoSlider = document.querySelectorAll(".segundoSlider");
 const circuloSlider = document.querySelectorAll(".circuloSlider");
 
-let slideIndex = 0;
+let slideIndex1 = 0;
+let slideIndex2 = 0;
 let circulosIndex = 0;
 
 
@@ -17,13 +18,13 @@ const mostrarPrimerSlider = () => {
         primerSlider[i].style.display = "none";
     }
     
-    slideIndex++;
+    slideIndex1++;
     
-    if (slideIndex > primerSlider.length) {
-        slideIndex = 1;
+    if (slideIndex1 > primerSlider.length) {
+        slideIndex1 = 1;
     }
     
-    primerSlider[slideIndex-1].style.display = "block";
+    primerSlider[slideIndex1-1].style.display = "block";
     setTimeout(mostrarPrimerSlider, 2000);
 }
 
@@ -33,14 +34,14 @@ const mostrarSegundoSlider = () => {
     for (let i = 1; i < segundoSlider.length; i++) {
         segundoSlider[i].style.display = "none";
     }
-
-    slideIndex++;
-
-    if (slideIndex > primerSlider.length) {
-        slideIndex = 1;
+    
+    slideIndex2++;
+    
+    if (slideIndex2 > primerSlider.length) {
+        slideIndex2 = 1;
     }
 
-    segundoSlider[slideIndex-1].style.display = "block";
+    segundoSlider[slideIndex2-1].style.display = "block";
     setTimeout(mostrarSegundoSlider, 2000);
 }
 
@@ -48,24 +49,25 @@ mostrarPrimerSlider();
 mostrarSegundoSlider();
 
 
-const cambioCirculos = () => {
-    circuloSlider[0].classList.replace("fas", "far");
+// const cambioCirculos = () => {
+//     circuloSlider[0].classList.add("far");
+//     // console.log(circuloSlider);
 
-    for (let i = 1; i < circuloSlider.length; i++) {
-        circuloSlider[i].classList.replace("fas", "far");
-    }
+//     for (let i = 1; i < circuloSlider.length; i++) {
+//         circuloSlider[i].classList.replace("fas", "far");
+//     }
 
-    slideIndex++;
+//     circulosIndex++;
 
-    if (slideIndex > circuloSlider.length) {
-        slideIndex = 1;
-    }
+//     if (circulosIndex > circuloSlider.length) {
+//         circulosIndex = 1;
+//     }
 
-    circuloSlider[slideIndex-1].classList.replace("far", "fas");
-    setTimeout(cambioCirculos, 2000);
-}
+//     circuloSlider[circulosIndex-1].classList.replace("far", "fas");
+//     setTimeout(cambioCirculos, 2000);
+// }
 
-cambioCirculos();
+// cambioCirculos();
 
 // const cambioCirculo = () => {
 //     let circuloSlider = document.querySelectorAll(".circuloSlider");
