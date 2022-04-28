@@ -133,17 +133,16 @@ main section#sliderMarcas .flechas .icon-angle-right-solid:hover {
     color:  #444444;
 }
 
-main section#sliderMarcas button {
+main section#sliderMarcas #botonMarcas {
     font-size: 14px;
     color: #444444;
     background-color: #6DE5D1;
     border-radius: 50px;
-    border: 0;
-    outline: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-main section#sliderMarcas button:hover {
+main section#sliderMarcas #botonMarcas:hover {
     background-color: #58CFBB;
 }
 
